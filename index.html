@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brandon</title>
+    <!--Icon awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--API-scrollreveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--SWIPER CSS-->
+    <link rel="stylesheet" href="/CSS/swiper-bundle.min.css" />
+    <!--Css-->
+    <link rel="stylesheet" href="/style/Carrossel.css" />
+    <link rel="stylesheet" href="/style/styleVs1.css" />
+    <link rel="stylesheet" href="/style/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="27"
+            height="27"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+        <div class="logo_header">
+          <h1>logo</h1>
+        </div>
+        <div class="nagivation_header" id="nagivation_header">
+          <button onclick="toggleSidebar()" class="btn_icon_header icon_x">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#project">Projetos</a></li>
+          <li><a href="#contact">Contatos</a></li>
+        </div>
+      </nav>
+    </header>
+    <!--Section-->
+    <main tabindex="0" onclick="closeSidebar()" class="content" id="content">
+      <section id="home" class="home">
+        <div class="container_home">
+          <img src="/img/Plano-de-negócio.jpg" alt="Messa de negócios" />
+          <div class="links">
+            <div class="teste">
+              <h1>Brandon lee da silva</h1>
+              <span
+                class="typewrite"
+                data-loop="yes"
+                data-spped="100"
+                data-delay="2000"
+                data-words='["Administração", "Desenvolvimento web"]'
+              ></span>
+
+              <ul class="social_links">
+                <li>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-telegram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container_about">
+          <div class="phot_one">
+            <img src="/img/Brandon.png" alt="Foto do Brandon" />
+          </div>
+          <div class="text_about">
+            <h2>Sobre Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laudantium amet natus eius culpa neque vitae libero architecto,
+              voluptates facere dignissimos ullam repellendus at alias et
+              doloribus. Possimus nobis magnam eaque?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laudantium amet natus eius culpa neque vitae libero architecto,
+              voluptates facere dignissimos ullam repellendus at alias et
+              doloribus. Possimus nobis magnam eaque?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Projetos-->
+      <section id="project" class="front-end">
+        <div class="title">
+          <h2>Projetos</h2>
+          <div class="line"></div>
+        </div>
+        <div class="title-slide">
+          <h3>Front-end</h3>
+        </div>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://www.hashtagtreinamentos.com/wp-content/uploads/2021/05/Dashboard-no-Excel-1-1024x560.png"
+                      alt="Dashboard1"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Dashboard1</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia, quos recusandae, rerum, consequatur velit quibusdam
+                  </p>
+
+                  <button class="button">Abrir</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://http2.mlstatic.com/D_NQ_NP_840140-MLB45824997259_052021-O.jpg"
+                      alt="Dashboard2"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Dashboard2</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia, quos recusandae, rerum, consequatur velit quibusdam
+                  </p>
+
+                  <button class="button">Abrir</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://www.geckoboard.com/blog/content/images/2022/02/Excel-sales-dashboard-blog.png"
+                      alt="Dashboard3"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Dashboard3</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia, quos recusandae, rerum, consequatur velit quibusdam
+                  </p>
+
+                  <button class="button">Abrir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination swiper-navBtn"></div>
+        </div>
+      </section>
+
+      <section class="power-bi">
+        <div class="title-slide">
+          <h3>Power-BI</h3>
+        </div>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://www.hashtagtreinamentos.com/wp-content/uploads/2021/05/Dashboard-no-Excel-1-1024x560.png"
+                      alt="Dashboard1"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Dashboard1</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia, quos recusandae, rerum, consequatur velit quibusdam
+                  </p>
+
+                  <button class="button">Abrir</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://http2.mlstatic.com/D_NQ_NP_840140-MLB45824997259_052021-O.jpg"
+                      alt="Dashboard2"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Dashboard2</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia, quos recusandae, rerum, consequatur velit quibusdam
+                  </p>
+
+                  <button class="button">Abrir</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://www.geckoboard.com/blog/content/images/2022/02/Excel-sales-dashboard-blog.png"
+                      alt="Dashboard3"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Dashboard3</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia, quos recusandae, rerum, consequatur velit quibusdam
+                  </p>
+
+                  <button class="button">Abrir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination swiper-navBtn"></div>
+        </div>
+      </section>
+
+      <section class="excel">
+        <div class="title-slide">
+          <h3>Excel</h3>
+        </div>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://www.hashtagtreinamentos.com/wp-content/uploads/2021/05/Dashboard-no-Excel-1-1024x560.png"
+                      alt="Dashboard1"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Dashboard1</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia, quos recusandae, rerum, consequatur velit quibusdam
+                  </p>
+
+                  <button class="button">Abrir</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://http2.mlstatic.com/D_NQ_NP_840140-MLB45824997259_052021-O.jpg"
+                      alt="Dashboard2"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Dashboard2</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia, quos recusandae, rerum, consequatur velit quibusdam
+                  </p>
+
+                  <button class="button">Abrir</button>
+                </div>
+              </div>
+
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="https://www.geckoboard.com/blog/content/images/2022/02/Excel-sales-dashboard-blog.png"
+                      alt="Dashboard3"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Dashboard3</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia, quos recusandae, rerum, consequatur velit quibusdam
+                  </p>
+
+                  <button class="button">Abrir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination swiper-navBtn"></div>
+        </div>
+      </section>
+      <!--Footer-->
+      <section>
+        <footer id="contact" class="contact">
+          <div class="title">
+            <h2>Contatos</h2>
+            <div class="line"></div>
+          </div>
+          <div class="footer">
+            <ul class="social_links_footer">
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+              </li>
+            </ul>
+            <div class="title_footer">
+              <h5><i class="fas fa-envelope"></i>brandolee432@gmail.com</h5>
+            </div>
+            <p>Desenvolvedor: Brandon Lee</p>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/scritpVs1.js"></script>
+    <script src="js/typewriting.js"></script>
+  </body>
+</html>

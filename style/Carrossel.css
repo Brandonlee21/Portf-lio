@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+.title-slide{
+  color: #fff;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-left: 16px;
+}
+.slide-container{
+  width: 100%;
+  padding: 10px 0;
+  max-width: 1120px;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #fff;
+}
+.image-content,
+.card-content{
+  display: flex;
+  align-items:center;
+  padding: 10px 14px ;
+  flex-direction: column;
+}
+.image-content{
+  row-gap:5px;
+  padding: 25px 0;
+  position: relative;
+}
+.overlay{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 25px 25px 0 25px;
+  background-color: rgb(225, 147, 22);
+}
+.overlay::before,
+.overlay::after{
+  right: 0;
+  content: '';
+  width: 40px;
+  height: 40px;
+  bottom: -40px;
+  position: absolute;
+  background-color: rgb(225, 147, 22);
+}
+.overlay::after{
+  background-color: #fff;
+  border-radius: 0 25px 0 0;
+}
+.card-image{
+  width: 300px;
+  padding: 3px;
+  height: 180px;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+}
+.card-image .card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:5px;
+  border: 4px solid rgb(225, 147, 22);
+}
+.name{
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  color: #fff;
+  margin: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background-color: rgb(225, 147, 22);
+}
+.button:hover{
+  background: rgb(246, 154, 6);
+}
+.front-end .swiper-navBtn,
+.power-bi .swiper-navBtn,
+.excel .swiper-navBtn{
+
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color:rgb(249, 186, 85) ;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 40px;
+}
+.swiper-button-prev,
+.swiper-button-next{
+  right: 0;
+}
+
+.swiper-pagination-bullet{ 
+  opacity: 1;
+  background-color: #fff;
+}
+.swiper-pagination-bullet-active{
+  background-color: rgb(249, 186, 85);
+}
+@media screen and (max-width: 768px){
+  .title-slide{
+    text-align:center;
+  }
+  .card-image{
+    width: 90%;
+  }
+  .slide-content{
+    margin: 0 10px;
+  }
+  .front-end .swiper-navBtn,
+  .power-bi .swiper-navBtn,
+  .excel .swiper-navBtn{
+    display: none;
+  }
+}
